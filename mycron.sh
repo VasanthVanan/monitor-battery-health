@@ -1,0 +1,1 @@
+$(which python3) monitorBattery.py >> tenMinjob.log
