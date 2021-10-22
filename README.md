@@ -37,7 +37,20 @@ This python script constantly monitors the battery usage of your Macbook (every 
     ```
 4. follow the instruction: [User Manual Document](https://github.com/VasanthVanan/monitor-battery-health/blob/main/user-manual.pdf)
 
-## Closing thoughts
+## Screenshots:
+
+* Notifies if charges are past 80% 
+ <br>![Image 1](/images/image-2.png)
+* Notifies if charge goes down to 1% 
+ <br>![Image 2](/images/image-1.png)
+* Notifies if significant battery energy is used 
+ <br>![Image 3](/images/image-3.png)
+* Automation App: Notification 
+ <br>![Image 4](/images/image-4.png)
+* Pushover Notification 
+ <br>![Image 5](/images/image-5.png)
+
+## Closing thoughts:
 
 I've been using this script for years and it showed good results. Hereby, I wanted to share it with all the other Macbook users who are concerned about their battery health. Try it out and let me know your thoughts! 
 
