@@ -1,4 +1,4 @@
-import os, subprocess
+import os, subprocess, re
 from datetime import date
 
 def getOutputfromTerminal(command):
@@ -10,7 +10,7 @@ os.system("echo '          "+date.today().strftime("%d-%b-%Y")+": ' >> cycleStat
 os.system('system_profiler SPPowerDataType | grep "Cycle Count" >> cycleStatus.log')
 
 if(getOutputfromTerminal('system_profiler SPPowerDataType | grep "Maximum Capacity"') == ''):
-	os.system("echo '		  Replace Battery' >> cycleStatus.log")
+	os.system("echo '		  Maximum Capacity: 0' >> cycleStatus.log")
 else:
 	os.system('system_profiler SPPowerDataType | grep "Maximum Capacity" >> cycleStatus.log')
 
@@ -21,14 +21,17 @@ with open('cycleStatus.log','r') as f:
 
 cycleCount = [int(s) for s in content[-4].split() if s.isdigit()]
 
-if('Replace' in content[-3]):
+if('Replace' in content[-3] and int(re.findall(r'\d+',content[-4])[0]) >= 1000):
 	maxCapacity = -1
 	os.system("osascript -e 'display notification \"Capacity Exceeded: Replace Battery \" with title \"Cycle Count: "+str(cycleCount[0])+" \"  sound name \"Blow\"'")
 else:
 	maxCapacity = [int(s) for s in content[-3].replace("%","").split() if s.isdigit()]
-	os.system("osascript -e 'display notification \"Max. Capacity: "+str(maxCapacity[0])+"% \" with title \"Cycle Count: "+str(cycleCount[0])+" \"  sound name \"Blow\"'")
+	if maxCapacity[0] == 0:
+		os.system("osascript -e 'display notification with title \"Cycle Count: "+str(cycleCount[0])+" \"  sound name \"Blow\"'")
+		
+	else:
+		os.system("osascript -e 'display notification \"Max. Capacity: "+str(maxCapacity[0])+"% \" with title \"Cycle Count: "+str(cycleCount[0])+" \"  sound name \"Blow\"'")
 
 #system_profiler SPPowerDataType | grep "Cycle Count"
 #system_profiler SPPowerDataType | grep "State of Charge"
 #system_profiler SPPowerDataType | grep "Maximum Capacity"
-
