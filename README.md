@@ -21,6 +21,22 @@ This python script constantly monitors the battery usage of your Macbook (every 
 
 ---
 
+## Installation:
+
+1. Clone the repository to your mac: 
+     ```bash
+     git clone https://github.com/VasanthVanan/monitor-battery-health.git
+     ```
+2. Change into the project directory:
+    ```bash
+    cd monitor-battery-health
+    ```
+3. Install the required dependencies using pip:
+    ```bash
+    pip install -r requirements.txt
+    ```
+4. follow the instruction: [User Manual Document](https://github.com/VasanthVanan/monitor-battery-health/blob/main/user-manual.pdf)
+
 ## Closing thoughts
 
 I've been using this script for years and it showed good results. Hereby, I wanted to share it with all the other Macbook users who are concerned about their battery health. Try it out and let me know your thoughts! 
