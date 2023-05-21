@@ -11,7 +11,7 @@ This python script constantly monitors the battery usage of your Macbook (every 
 
 - notifies & dictates if significant energy is being used,
 
-- notifies if charges are past 80% (Note: charging till 100% reduces your mac's battery life over time, don't ever do that!)
+- notifies if charges are past 80% (charging till 100% reduces your mac's battery life over time, don't ever do that!)
 
 - provides analysis on the number of lasting days for each battery capacity
 
