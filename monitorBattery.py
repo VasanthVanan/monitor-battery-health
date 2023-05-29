@@ -37,8 +37,8 @@ def readFile(fileName):
 # ------ Variable Assignment by user --------
 
 isMuted = True
-apiToken = ''
-userToken = ''
+apiToken = None
+userToken = None
 intervalValue = 2
 
 # -------------------------------------------
