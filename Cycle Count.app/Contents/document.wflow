@@ -59,7 +59,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>python3 ~/monitor-battery-health/cycleStatus.py</string>
+					<string>cd ~/monitor-battery-health &amp;&amp; python3 cycleStatus.py</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>

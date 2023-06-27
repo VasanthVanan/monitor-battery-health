@@ -16,7 +16,7 @@ else:
 
 os.system('echo "\n" >> ~/monitor-battery-health/cycleStatus.log')
 
-with open('~/monitor-battery-health/cycleStatus.log','r') as f:
+with open('cycleStatus.log','r') as f:
 	content = f.readlines()
 
 cycleCount = [int(s) for s in content[-4].split() if s.isdigit()]
