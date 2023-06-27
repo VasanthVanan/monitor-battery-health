@@ -67,7 +67,7 @@ if(currentPercentage > previousPercentage):
 	charging = True
 
 # read battery usage log file
-content = readFile('fiveMinjob.log') # replace tenMinjob.log if cron job runs for every 10 minutes
+content = readFile('tenMinjob.log') # replace tenMinjob.log if cron job runs for every 10 minutes
 
 # calculate the difference of last record in log and current time 
 gapTime = ((datetime.datetime.strptime(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),"%Y-%m-%d %H:%M:%S")) - (datetime.datetime.strptime(content[-1].strip()[:19],"%Y-%m-%d %H:%M:%S"))).seconds
