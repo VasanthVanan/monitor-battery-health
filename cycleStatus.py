@@ -6,17 +6,17 @@ def getOutputfromTerminal(command):
 	output=proc.communicate()[0]
 	return output.decode('UTF-8')
 
-os.system("echo '          "+date.today().strftime("%d-%b-%Y")+": ' >> cycleStatus.log")
-os.system('system_profiler SPPowerDataType | grep "Cycle Count" >> cycleStatus.log')
+os.system("echo '          "+date.today().strftime("%d-%b-%Y")+": ' >> ~/monitor-battery-health/cycleStatus.log")
+os.system('system_profiler SPPowerDataType | grep "Cycle Count" >> ~/monitor-battery-health/cycleStatus.log')
 
 if(getOutputfromTerminal('system_profiler SPPowerDataType | grep "Maximum Capacity"') == ''):
-	os.system("echo '		  Maximum Capacity: 0' >> cycleStatus.log")
+	os.system("echo '		  Maximum Capacity: 0' >> ~/monitor-battery-health/cycleStatus.log")
 else:
-	os.system('system_profiler SPPowerDataType | grep "Maximum Capacity" >> cycleStatus.log')
+	os.system('system_profiler SPPowerDataType | grep "Maximum Capacity" >> ~/monitor-battery-health/cycleStatus.log')
 
-os.system('echo "\n" >> cycleStatus.log')
+os.system('echo "\n" >> ~/monitor-battery-health/cycleStatus.log')
 
-with open('cycleStatus.log','r') as f:
+with open('~/monitor-battery-health/cycleStatus.log','r') as f:
 	content = f.readlines()
 
 cycleCount = [int(s) for s in content[-4].split() if s.isdigit()]
