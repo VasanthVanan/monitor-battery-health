@@ -3,7 +3,7 @@
 Apple states: 
 > "Batteries have a limited amount of charge cycles before their performance is expected to diminish. Once the cycle count is reached, a replacement battery is recommended to maintain performance. You can use your battery after it reaches its maximum cycle count, but you might notice a reduction in your battery life."
 
----
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 ## Introduction:
 
@@ -19,7 +19,7 @@ This python script constantly monitors the battery usage of your Macbook (every 
 
 - creates a log for future observations
 
----
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 ## Installation:
 
@@ -37,6 +37,8 @@ This python script constantly monitors the battery usage of your Macbook (every 
     ```
 4. follow the instruction: [User Manual Document](https://github.com/VasanthVanan/monitor-battery-health/blob/main/user-manual.pdf)
 
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
 ## Screenshots:
 
 * Notifies if charges are past 80% 
@@ -49,6 +51,8 @@ This python script constantly monitors the battery usage of your Macbook (every 
  <br>![Image 4](https://lh3.googleusercontent.com/pw/AIL4fc9XHbOisr4tyY_xFF04GFfbnlM9aNKWZ7iEjnjpMZ7SI_aSUH5MVLzUVAwEaxomF4cPUjpLH_WTPbYlGespX7TkMdyhiNz7wl-SFG_eZf2LeE-Kok_pGGHjS4wl5ZSMudrO_wlqlFT630LDywhQYZd_=w808-h194-s-no)
 * Pushover Notification 
  <br>![Image 5](https://lh3.googleusercontent.com/pw/AIL4fc9jJhpSG273D8-7hKEmeJWOwzEF10y8wQWgPRo307y6fmfr9KexmlviERDbf-O-yv6AeaRyEeiMVRWWMFf7hpCsTrAE3I49G4AABntgokgUhAJbMBhv04wOa_BfUgG2xKzYKCV2trN1fa2f4wVr9csc=w1408-h658-s-no)
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 ## Closing thoughts:
 
