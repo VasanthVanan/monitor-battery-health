@@ -58,7 +58,7 @@ This python script constantly monitors the battery usage of your Macbook (every 
 
 I've been using this script for years and it showed good results. Hereby, I wanted to share it with all the other Macbook users who are concerned about their battery health. Try it out and let me know your thoughts! 
 
-Email: cr34u6rupg@pomail.net<br>
+Email: cr34u6rupg[at]pomail[dot]net<br>
 Instagram: <a href="https://www.instagram.com/vasanth_vanan">@vasanth_vanan</a>
 
 
